@@ -1,5 +1,7 @@
 package com.alex.post.boy.frame;
 
+import static com.alex.post.boy.frame.util.UiUtils.*;
+
 import com.alex.post.boy.frame.component.RequestPanel;
 
 import java.awt.*;
@@ -13,6 +15,7 @@ public class MainFrame extends JFrame {
 
     private static final Dimension MINIMUM_SIZE = new Dimension(1024, 768);
     private static final String REQUEST_PANEL_CAPTION = "GET Requester";
+
 
     public MainFrame() {
         super("Post boy");
@@ -47,6 +50,7 @@ public class MainFrame extends JFrame {
                 dispose();
             }
         });
+        file.add(new JSeparator());
         file.add(exit);
         return file;
     }

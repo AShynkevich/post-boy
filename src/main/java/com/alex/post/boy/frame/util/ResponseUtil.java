@@ -15,7 +15,7 @@ import javax.swing.*;
  */
 public final class ResponseUtil {
 
-    private static final Gson GSON_PARSER = new GsonBuilder().setPrettyPrinting().create();
+    private static final Gson GSON_PARSER = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
 
     private ResponseUtil() {
     }
